@@ -1,0 +1,58 @@
+.preset {
+    /* add dark filter */
+    filter: brightness(0.5);
+}
+
+.preset:hover {
+    /* remove dark filter */
+    filter: brightness(1);
+}
+
+.selected {
+    /* add border */
+    border: 3px solid #666;
+}
+
+div {
+    border: 1px solid #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contextmenu {
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    background-color: rgba(120, 120, 120, 0.5);
+    height: 100px;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+
+#contextmenu button {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    width: 200px;
+}
+
+#contextmenu button:hover {
+    background-color: #f0f0f0;
+}
